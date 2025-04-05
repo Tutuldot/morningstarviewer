@@ -5,8 +5,8 @@ import supabase
 import pandas as pd
 
 # Initialize Supabase client
-SUPABASE_URL = "https://dtnoqbvqydcoevqscsei.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR0bm9xYnZxeWRjb2V2cXNjc2VpIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczMzQ1MDkwNywiZXhwIjoyMDQ5MDI2OTA3fQ.dHWQ6CjOZqokn-Q2gxLLKxVr0ZrLTvMEYFgVBKkp9g8"
+SUPABASE_URL = st.secrets["supabase"]["url"]
+SUPABASE_KEY = st.secrets["supabase"]["key"]
 supabase_client = supabase.create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
