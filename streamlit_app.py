@@ -37,6 +37,7 @@ if st.button("Search"):
                     margin-bottom: 10px;">
                     
                     Item Name: {product['item_name']} - SKU: {product['variant_code']}
+                    Date: {product['actual_arrival_date']}
                     Description: {product['description']}
                     
                     💰 Acquisition Cost:Php {product['acquisition_cost']}
