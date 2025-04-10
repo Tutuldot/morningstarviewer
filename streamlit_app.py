@@ -20,7 +20,8 @@ st.title("🔍 Product Search")
 
 search_text = st.text_input("Enter product name:")
 
-if st.button("Search"):
+
+def performSearch():
     if search_text:
         results = get_product_info(search_text)
 
@@ -66,3 +67,7 @@ if st.button("Search"):
             st.warning("No products found.")
     else:
         st.error("Please enter a search term.")
+
+
+if st.button("Search"):
+    performSearch()
