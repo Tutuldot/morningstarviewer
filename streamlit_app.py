@@ -42,12 +42,22 @@ if st.button("Search"):
                     
                     💰 Acquisition Cost:Php {product['acquisition_cost']}
                     📦 Computed Acquisition Cost:Php {product['computed_acquisition_cost']}
-                    ⚖️ Computed Weight:Php {product['computed_weight']}
+                    ⚖️ Computed Weight: {product['comp_base']}
 
-                    💲 Selling Prices:
+                    💲 Old Selling Prices ({product['old_price']} per gram):
                     Selling Price (SP): Php {product['computed_selling_price1']}
                     Tiktok Floor Price (FP): Php {product['computed_selling_price2']}
                     Tiktok ceiling Price (FC): Php {product['computed_selling_price3']}
+
+                    💲 New Selling Prices ({product['current_price_per_gram']} per gram):
+                    Selling Price (SP): Php {product['SP'] or 0}
+                    Tiktok Floor Price (FP): Php {(product['FP'] or 0)}
+                    Tiktok ceiling Price (FC): Php {(product['FP'] or 0) + 1000}
+
+                    V2(For Light Weight)
+                    Selling Price (SP): Php {(product['SP_V2'] or 0)}
+                    Tiktok Floor Price (FP): Php {(product['FP_V2'] or 0)}
+                    Tiktok ceiling Price (FC): Php {(product['FP_V2'] or 0) + 1000}
 
                
                 </div>
