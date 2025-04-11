@@ -45,15 +45,14 @@ def performSearch():
                     ⚖️ Computed Weight: {product['comp_base']}
 
                     
-                    ------------------------------------------------------
-                    💲 New Selling Prices ({product['current_price_per_gram']} per gram):
+                    -----------------------------------------------------
+                    💲New Selling Prices ({product['current_price_per_gram']} per gram):
                     Selling Price (SP): Php {product['SP'] or 0}
                     Tiktok Floor Price (FP): Php {(product['FP'] or 0)}
                     Tiktok ceiling Price (FC): Php {(product['FP'] or 0) + 1000}
-                    
                     -----------------------------------------------------
 
-                    V2(For Light Weight)
+                    V2(For Light Weight )
                     Selling Price (SP): Php {(product['SP_V2'] or 0)}
                     Tiktok Floor Price (FP): Php {(product['FP_V2'] or 0)}
                     Tiktok ceiling Price (FC): Php {(product['FP_V2'] or 0) + 1000}
